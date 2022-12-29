@@ -9,6 +9,12 @@ The process of creating a randomly generated character involves the following st
 
 ---------
 
+
+Update 1.01: 2022-12-28
+
+Added more functionality to Character Generator.
+
+
 Initial commit: 2022-12-25
 
 The initial commit for the White Box RPG Character Generator.
