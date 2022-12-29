@@ -9,6 +9,10 @@ The process of creating a randomly generated character involves the following st
 
 ---------
 
+Update 1.02: 2022-12-29
+
+Update existing files to add more functionality.
+
 
 Update 1.01: 2022-12-28
 
