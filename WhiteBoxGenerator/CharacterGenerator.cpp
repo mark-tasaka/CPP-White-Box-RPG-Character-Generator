@@ -70,3 +70,150 @@ int CharacterGenerator::getCharisma() const
 {
 	return charisma;
 }
+
+
+void CharacterGenerator::setStrengthMod(int strength)
+{
+	if (strength > 7)
+	{
+		this->strengthModifier = -1;
+	}
+	else if (strength > 14)
+	{
+		this->strengthModifier = 1;
+	}
+	else
+	{
+		this->strengthModifier = 0;
+	}
+}
+
+void CharacterGenerator::setDexterityMod(int dexterity)
+{
+	if (dexterity > 7)
+	{
+		this->dexterityModifier = -1;
+	}
+	else if (dexterity > 14)
+	{
+		this->dexterityModifier = 1;
+	}
+	else
+	{
+		this->dexterityModifier = 0;
+	}
+}
+
+void CharacterGenerator::setConstitutionMod(int constitution)
+{
+	if (constitution > 7)
+	{
+		this->constitutionModifier = -1;
+	}
+	else if (constitution > 14)
+	{
+		this->constitutionModifier = 1;
+	}
+	else
+	{
+		this->constitutionModifier = 0;
+	}
+}
+
+void CharacterGenerator::setWisdomMod(int wisdom)
+{
+	if (wisdom > 7)
+	{
+		this->wisdomModifier = -1;
+	}
+	else if (wisdom > 14)
+	{
+		this->wisdomModifier = 1;
+	}
+	else
+	{
+		this->wisdomModifier = 0;
+	}
+}
+
+void CharacterGenerator::setIntelligenceMod(int intelligence)
+{
+	if (intelligence > 7)
+	{
+		this->intelligenceModifier = -1;
+	}
+	else if (intelligence > 14)
+	{
+		this->intelligenceModifier = 1;
+	}
+	else
+	{
+		this->intelligenceModifier = 0;
+	}
+}
+
+void CharacterGenerator::setCharismaMod(int charisma)
+{
+	if (charisma > 7)
+	{
+		this->charismaModifier = -1;
+	}
+	else if (charisma > 14)
+	{
+		this->charismaModifier = 1;
+	}
+	else
+	{
+		this->charismaModifier = 0;
+	}
+}
+
+int CharacterGenerator::getStrengthMod() const
+{
+	return strengthModifier;
+}
+
+int CharacterGenerator::getDexterityMod() const
+{
+	return dexterityModifier;
+}
+
+int CharacterGenerator::getConstitutionMod() const
+{
+	return constitutionModifier;
+}
+
+int CharacterGenerator::getWisdomMod() const
+{
+	return wisdomModifier;
+}
+
+int CharacterGenerator::getIntelligenceMod() const
+{
+	return intelligenceModifier;
+}
+
+int CharacterGenerator::getCharismaMod() const
+{
+	return charismaModifier;
+}
+
+string CharacterGenerator::convertAbilityMod(int modifier)
+{
+	string modiferString;
+
+	if (modifier == -1)
+	{
+		modiferString = "-1";
+	}
+	else if (modifier == 1)
+	{
+		modiferString = "+1";
+	}
+	else
+	{
+		modiferString = "+0";
+	}
+
+	return modiferString;
+}

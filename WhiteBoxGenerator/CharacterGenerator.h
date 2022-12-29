@@ -16,6 +16,19 @@ public:
 	int getWisdom() const;
 	int getIntelligence() const;
 	int getCharisma() const;
+	void setStrengthMod(int strength);
+	void setDexterityMod(int dexterity);
+	void setConstitutionMod(int constitution);
+	void setWisdomMod(int wisdom);
+	void setIntelligenceMod(int intelligence);
+	void setCharismaMod(int charisma);
+	int getStrengthMod() const;
+	int getDexterityMod() const;
+	int getConstitutionMod() const;
+	int getWisdomMod() const;
+	int getIntelligenceMod() const;
+	int getCharismaMod() const;
+	string convertAbilityMod(int modifier);
 	
 
 private:

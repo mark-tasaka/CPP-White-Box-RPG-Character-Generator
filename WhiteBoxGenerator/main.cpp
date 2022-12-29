@@ -47,7 +47,7 @@ void runGenerator()
 	cout << "---------------------------" << endl;
 
 	cout <<  character.getCharacterName() << endl;
-	cout << "Strength: " << character.getStrength() << endl;
+	cout << "Strength: " << character.getStrength() << "  (" << character.convertAbilityMod(character.getStrengthMod()) << ")" << endl;
 	cout << "Dexterity: " << character.getDexterity() << endl;
 	cout << "Constitution: " << character.getConstitution() << endl;
 	cout << "Wisdom: " << character.getWisdom() << endl;
