@@ -7,15 +7,15 @@
 using namespace std;
 
 
-
-CharacterGenerator::CharacterGenerator()
+CharacterGenerator::CharacterGenerator(string characterName)
 {
-
+	this->characterName = characterName;
 }
 
-CharacterGenerator::CharacterGenerator(int level)
+
+string CharacterGenerator::getCharacterName() const
 {
-	this->level = level;
+	return characterName;
 }
 
 void CharacterGenerator::dieRoll()
@@ -54,4 +54,19 @@ int CharacterGenerator::getDexterity() const
 int CharacterGenerator::getConstitution() const
 {
 	return constitution;
+}
+
+int CharacterGenerator::getWisdom() const
+{
+	return wisdom;
+}
+
+int CharacterGenerator::getIntelligence() const
+{
+	return intelligence;
+}
+
+int CharacterGenerator::getCharisma() const
+{
+	return charisma;
 }

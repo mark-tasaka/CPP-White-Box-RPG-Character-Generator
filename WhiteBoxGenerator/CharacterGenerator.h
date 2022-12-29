@@ -2,19 +2,24 @@
 #define CHARACTER_GENERATOR_H
 #include<iostream>
 #include<string>
+using namespace std;
 
 class CharacterGenerator
 {
 public:
-	CharacterGenerator();
-	CharacterGenerator(int level);
+	CharacterGenerator(string characterName);
+	string getCharacterName() const;
 	void dieRoll();
 	int getStrength() const;
 	int getDexterity() const;
 	int getConstitution() const;
+	int getWisdom() const;
+	int getIntelligence() const;
+	int getCharisma() const;
 	
 
 private:
+	string characterName;
 	int strength;
 	int dexterity;
 	int constitution;
