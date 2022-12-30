@@ -7,9 +7,9 @@
 using namespace std;
 
 
-CharacterGenerator::CharacterGenerator(string characterName)
+CharacterGenerator::CharacterGenerator(string playerName)
 {
-	this->characterName = characterName;
+	this->playerName = playerName;
 }
 
 

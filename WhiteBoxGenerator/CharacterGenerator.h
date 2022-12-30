@@ -7,7 +7,7 @@ using namespace std;
 class CharacterGenerator
 {
 public:
-	CharacterGenerator(string characterName);
+	CharacterGenerator(string playerName);
 	string getCharacterName() const;
 	void dieRoll();
 	int getStrength() const;
@@ -33,6 +33,7 @@ public:
 
 private:
 	string characterName;
+	string playerName;
 	int strength;
 	int dexterity;
 	int constitution;
