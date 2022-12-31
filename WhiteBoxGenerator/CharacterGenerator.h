@@ -29,7 +29,7 @@ public:
 	int getIntelligenceMod() const;
 	int getCharismaMod() const;
 	string convertAbilityMod(int modifier);
-	
+
 
 private:
 	string characterName;
@@ -58,4 +58,3 @@ private:
 
 
 #endif // !CHARACTER_GENERATOR_H
-

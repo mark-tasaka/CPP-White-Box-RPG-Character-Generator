@@ -37,6 +37,13 @@ void CharacterGenerator::dieRoll()
 	this->intelligence = abilityScores[3];
 	this->wisdom = abilityScores[4];
 	this->charisma = abilityScores[5];
+
+	setStrengthMod(this->strength);
+	setDexterityMod(this->dexterity);
+	setConstitutionMod(this->constitution);
+	setIntelligenceMod(this->intelligence);
+	setWisdomMod(this->wisdom);
+	setCharismaMod(this->charisma);
 }
 
 
@@ -74,7 +81,7 @@ int CharacterGenerator::getCharisma() const
 
 void CharacterGenerator::setStrengthMod(int strength)
 {
-	if (strength > 7)
+	if (strength < 7)
 	{
 		this->strengthModifier = -1;
 	}
@@ -90,7 +97,7 @@ void CharacterGenerator::setStrengthMod(int strength)
 
 void CharacterGenerator::setDexterityMod(int dexterity)
 {
-	if (dexterity > 7)
+	if (dexterity < 7)
 	{
 		this->dexterityModifier = -1;
 	}
@@ -106,7 +113,7 @@ void CharacterGenerator::setDexterityMod(int dexterity)
 
 void CharacterGenerator::setConstitutionMod(int constitution)
 {
-	if (constitution > 7)
+	if (constitution < 7)
 	{
 		this->constitutionModifier = -1;
 	}
@@ -122,7 +129,7 @@ void CharacterGenerator::setConstitutionMod(int constitution)
 
 void CharacterGenerator::setWisdomMod(int wisdom)
 {
-	if (wisdom > 7)
+	if (wisdom < 7)
 	{
 		this->wisdomModifier = -1;
 	}
@@ -138,7 +145,7 @@ void CharacterGenerator::setWisdomMod(int wisdom)
 
 void CharacterGenerator::setIntelligenceMod(int intelligence)
 {
-	if (intelligence > 7)
+	if (intelligence < 7)
 	{
 		this->intelligenceModifier = -1;
 	}
@@ -154,7 +161,7 @@ void CharacterGenerator::setIntelligenceMod(int intelligence)
 
 void CharacterGenerator::setCharismaMod(int charisma)
 {
-	if (charisma > 7)
+	if (charisma < 7)
 	{
 		this->charismaModifier = -1;
 	}
