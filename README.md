@@ -9,6 +9,11 @@ The process of creating a randomly generated character involves the following st
 
 ---------
 
+Update 1.04: 2022-12-31
+
+Added functionality that allows users the option of re-rolling ability scores.
+
+
 Update 1.03: 2022-12-30
 
 Added more functionality to Character Generator.
