@@ -29,6 +29,7 @@ public:
 	int getIntelligenceMod() const;
 	int getCharismaMod() const;
 	string convertAbilityMod(int modifier);
+	string selectCharacterClass(int choice);
 
 
 private:
@@ -46,6 +47,8 @@ private:
 	int intelligenceModifier;
 	int wisdomModifier;
 	int charismaModifier;
+
+	string characterClass;
 
 	int level;
 	//string characterClass;

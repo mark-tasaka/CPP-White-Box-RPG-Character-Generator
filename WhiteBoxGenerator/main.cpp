@@ -50,8 +50,10 @@ void runGenerator()
 	cout << endl;
 	cout << "Hello " << playerName << ".  Let's randomly generate a character.  First, we will roll three six-sided dice (d6) for each of your character's ability scores in the order of: \n\tStrength \n\tConstitution \n\tDexterity \n\tWisdom \n\tIntelligence \n\tCharima" << endl << endl;
 
-	//system("pause");
+	cout << "Press any key to continue." << endl;
+	cin.get();
 
+	cout << "Your ability scores are: " << endl << endl;
 
 	CharacterGenerator character = CharacterGenerator(playerName);
 
@@ -66,6 +68,10 @@ void runGenerator()
 	cout << "Wisdom: " << character.getWisdom() << "  (" << character.convertAbilityMod(character.getWisdomMod()) << ")" << endl;
 	cout << "Intelligence: " << character.getIntelligence() << "  (" << character.convertAbilityMod(character.getIntelligenceMod()) << ")" << endl;
 	cout << "Charmisma: " << character.getCharisma() << "  (" << character.convertAbilityMod(character.getCharismaMod()) << ")" << endl;
+
+	cout << endl;
+
+	cout << "---------------------------" << endl << endl;;
 
 	cout << "Would you like to keep these ability scores?  If you would like to re-roll the ability scores, press 1 (press enter to keep the ability scores)." << endl;
 
@@ -113,6 +119,14 @@ void runGenerator()
 	cout << "Intelligence: " << character.getIntelligence() << "  (" << character.convertAbilityMod(character.getIntelligenceMod()) << ")" << endl;
 	cout << "Charmisma: " << character.getCharisma() << "  (" << character.convertAbilityMod(character.getCharismaMod()) << ")" << endl;
 
-	//system("pause");
+
+	cout << "Press any key to continue." << endl;
+	cin.get();
+
+	cout << "Now that your character's ability scores are generated, the next step is to select a Character Class for your character." << endl << endl;
+
+	cout << "Choose from one of the following character classes:" << endl << "\t1. Fighter" << endl << "\t2. Cleric" << endl << "\t3. Magic-User" << endl << "\t4. Thief" << endl << endl;
+
+	cout << "Press the corrisponding number for the Character Class (i.e., 1 for Fighter; 2 for Cleric; 3 for Magic-User; 4 for Thief)." << endl;
 
 }

@@ -224,3 +224,30 @@ string CharacterGenerator::convertAbilityMod(int modifier)
 
 	return modiferString;
 }
+
+
+string CharacterGenerator::selectCharacterClass(int choice)
+{
+	if (choice == 1)
+	{
+		this->characterClass = "Fighter";
+	}
+	else if (choice == 2)
+	{
+		this->characterClass = "Cleric";
+	}
+	else if (choice == 3)
+	{
+		this->characterClass = "Magic-User";
+	}
+	else if (choice == 4)
+	{
+		this->characterClass = "Thief";
+	}
+	else
+	{
+		this->characterClass = "Invalid";
+	}
+
+	return this->characterClass;
+}
