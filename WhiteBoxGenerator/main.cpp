@@ -44,6 +44,8 @@ void runGenerator()
 
 	string playerName;
 	string reRollScores = "1";
+	int characterClassChoice = 0;
+	string characterClass;
 
 	cout << "Welcome to the White Box random RPG Character Generator.  Please enter your name to begin." << endl;
 	getline(cin, playerName);
@@ -128,5 +130,40 @@ void runGenerator()
 	cout << "Choose from one of the following character classes:" << endl << "\t1. Fighter" << endl << "\t2. Cleric" << endl << "\t3. Magic-User" << endl << "\t4. Thief" << endl << endl;
 
 	cout << "Press the corrisponding number for the Character Class (i.e., 1 for Fighter; 2 for Cleric; 3 for Magic-User; 4 for Thief)." << endl;
+
+	cin >> characterClassChoice;
+
+	while (characterClassChoice < 1 || characterClassChoice >4)
+	{
+		cout << "You have entered an invalid choice.  Please entering the corrisponding number for the Character Class (i.e., 1 for Fighter; 2 for Cleric; 3 for Magic-User; 4 for Thief)." << endl;
+
+		cin >> characterClassChoice;
+	}
+
+	characterClass = character.selectCharacterClass(characterClassChoice);
+
+	cout << "You have selected the " << characterClass << " class" << endl;
+
+
+	cout << "Press any key to continue." << endl;
+	cin.get();
+
+
+	cout << endl;
+	cout << "--------------------------------" << endl;
+	cout << "Class: " << characterClass << endl;
+
+	cout << character.getCharacterName() << endl;
+	cout << "Strength: " << character.getStrength() << "  (" << character.convertAbilityMod(character.getStrengthMod()) << ")" << endl;
+	cout << "Dexterity: " << character.getDexterity() << "  (" << character.convertAbilityMod(character.getDexterityMod()) << ")" << endl;
+	cout << "Constitution: " << character.getConstitution() << "  (" << character.convertAbilityMod(character.getConstitutionMod()) << ")" << endl;
+	cout << "Wisdom: " << character.getWisdom() << "  (" << character.convertAbilityMod(character.getWisdomMod()) << ")" << endl;
+	cout << "Intelligence: " << character.getIntelligence() << "  (" << character.convertAbilityMod(character.getIntelligenceMod()) << ")" << endl;
+	cout << "Charmisma: " << character.getCharisma() << "  (" << character.convertAbilityMod(character.getCharismaMod()) << ")" << endl;
+
+
+	cout << "Press any key to continue." << endl;
+	cin.get();
+
 
 }
